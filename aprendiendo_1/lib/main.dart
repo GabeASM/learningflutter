@@ -1,4 +1,4 @@
-
+import 'package:aprendiendo_1/router/app_routes.dart';
 import 'package:aprendiendo_1/screens/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -16,14 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       //home: const ListView2Screen(),
-      initialRoute: 'home',
-      routes: {
-        "home"     : (context) => const HomeScreen(),
-        "listview1": (context) => const ListView1Screen(),
-        "listview2": (context) => const ListView2Screen(),
-        "alert"    : (context) => const AlertScreen(),
-        "card"     : (context) => const CardScreen()
-      },
+      initialRoute: AppRoute.initialRoute,
+      routes: AppRoute.getAppRoutes(),
+      onGenerateRoute: AppRoute.onGenerateRoute,
     );
   }
 }
