@@ -22,8 +22,8 @@ class ListView1Screen extends StatelessWidget {
         ...options.map(
           (e) => ListTile(
             title: Text(e),
-            trailing: const Icon(Icons.safety_divider),
-          )
+            trailing: const Icon(Icons.safety_divider),       
+          )  
           ).toList()
       ],)
     );
