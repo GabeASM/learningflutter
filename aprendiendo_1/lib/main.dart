@@ -1,3 +1,4 @@
+import 'package:aprendiendo_1/screens/listview1_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -10,17 +11,10 @@ class MyApp extends StatelessWidget {
   // si algo no cambia desde la compilacion, es mejor dejarlo con const
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      home: ListView1Screen()
     );
   }
 }
