@@ -1,4 +1,6 @@
 import 'package:aprendiendo_1/models/models.dart';
+import 'package:aprendiendo_1/screens/formulario_notas_screen.dart';
+import 'package:aprendiendo_1/screens/notas_screen.dart';
 import 'package:aprendiendo_1/screens/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -16,25 +18,30 @@ class AppRoute {
         nombre: "Home Screen",
         screen: const HomeScreen()),
     MenuOption(
-        route: "listview1",
-        icon: Icons.list,
-        nombre: "List view tipo 1",
-        screen: const ListView1Screen()),
+        route: "notas",
+        icon: Icons.note_alt,
+        nombre: "PROYECTO DE APLICACION",
+        screen: const NotasScreen()),
     MenuOption(
         route: "listview2",
-        icon: Icons.list_alt_outlined,
-        nombre: "List view tipo 2",
-        screen: const ListView2Screen()),
+        icon: Icons.note_alt,
+        nombre: "TALLER DE REDES",
+        screen: const NotasScreen()),
     MenuOption(
         route: "alert",
-        icon: Icons.add_alert,
-        nombre: "Alertas",
-        screen: const AlertScreen()),
+        icon: Icons.note_alt,
+        nombre: "UXD",
+        screen: const NotasScreen()),
     MenuOption(
         route: "cart",
-        icon: Icons.credit_card,
-        nombre: "Tarjetas",
-        screen: const CardScreen()),
+        icon: Icons.note_alt,
+        nombre: "COMPRENSION DEL CONTEXTO SOCIAL",
+        screen: const NotasScreen()),
+    MenuOption(
+        route: "form",
+        icon: Icons.note_alt,
+        nombre: "FORMULARIO",
+        screen: const FormNotasScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

@@ -5,7 +5,7 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   /*
-   ------------------ListView.separated------------------ 
+  ------------------ListView.separated------------------ 
   El ListView.separated nos ayuda a separar las cosas mas facil. 
   Tiene tres argumentos y dos de ellos deben retornar widgets.
   El otro debe recibir la cantidad de la lista que queremos.
@@ -27,14 +27,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Menu de navegacion"),
+            title: Text("Universidad de la frontera"),
             elevation: 0,
             backgroundColor: Colors.indigo),
         body: ListView.separated(
             itemBuilder: (context, index) {
               return ListTile(
                 title: Text(AppRoute.menuOption[index].nombre),
+                subtitle: const Text("SEMESTRE 2-2022"),
                 leading: Icon(AppRoute.menuOption[index].icon),
+                trailing: const Icon(Icons.arrow_forward_ios_outlined),
                 onTap: () {
                   //  final route = MaterialPageRoute(
                   //    builder: (context) => ListView1Screen(),
